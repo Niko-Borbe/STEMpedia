@@ -7,7 +7,7 @@
 	<meta name="generator" content={Astro.generator} />
 	<meta charset="UTF-8" />
 	<title>STEMpedia: A wiki dedicated for the S.T.E.M. fields.</title>
-	<link rel="icon" type="image/svg+xml" href="/STEMpedia-logo.svg" />
+	<link rel="icon" type="image/svg+xml" href="/Stempedia256.svg" />
 	<meta name="viewport" content="width=device-width" />
 	<meta name="author" content="Niko Roel A. Borbe" />
 	<meta name="description" content="A wiki dedicated for the STEM fields" />
@@ -20,8 +20,21 @@
 </html>
 
 <style is:global>
-	body {
-		background-color: HSL(57, 96%, 91%);
-		color: black;
-	}
+    @font-face {
+	font-family: "mona-sans";
+	src: url("/mona-sans-R.woff2") format("woff2");
+    }
+    @font-face {
+	font-family: "ortica";
+	src: url("/ortica-LR.woff2") format("woff2");
+    }
+    @font-face {
+	font-family: "geistV";
+	src: url("/geist-V.woff2") format("woff2");
+    }
+    :root {
+	background-color: HSL(57, 96%, 91%);
+	color: black;
+	font-size: clamp(15px, 0.4em, 24px);
+    }
 </style>
