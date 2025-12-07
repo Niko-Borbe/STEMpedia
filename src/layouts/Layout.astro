@@ -1,0 +1,52 @@
+---
+import HeaderNav from "../components/Header/Header-Nav.astro"
+---
+
+<html lang="en">
+<head>
+	<meta name="generator" content={Astro.generator} />
+	<meta charset="UTF-8" />
+	<title>STEMpedia: A wiki dedicated for the S.T.E.M. fields.</title>
+	<link rel="icon" type="image/svg+xml" href="/Stempedia256.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="author" content="Niko Roel A. Borbe" />
+	<meta name="description" content="A wiki dedicated for the STEM fields" />
+	<meta name="keywords" content="Stempedia Wiki STEM Wikipedia " />
+</head>
+<body>
+    <HeaderNav />
+    <slot/>
+</body>
+
+</html>
+
+<style is:global>
+    @font-face {
+	font-family: "mona-sans";
+	src: url("/mona-sans-R.woff2") format("woff2");
+    }
+    @font-face {
+	font-family: "ortica";
+	src: url("/ortica-LR.woff2") format("woff2");
+    }
+    @font-face {
+	font-family: "geistV";
+	src: url("/geist-V.woff2") format("woff2");
+    }
+    :root {
+	--color-corn: hsl(54, 95%, 67%);
+	--colos-peach: hsl(37°, 100%, 92%);
+	--color-blond: hsl(49, 83%, 86%);
+	--color-cream: hsl(57, 96%, 91%);
+	--color-beige: hsl(60, 56%, 91%);
+	--color-eucalyptus: hsl(72, 28%, 76%);
+	--color-pistachio: hsl(62, 46%, 86%);
+	--color-oliveDrab: hsl(80, 60%, 35%);
+	background-color: var(--color-cream);
+	color: black;
+    }
+    body {
+	margin: 0px;
+	padding: 0px;
+    }
+</style>
