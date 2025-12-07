@@ -1,5 +1,5 @@
 ---
-
+import HeaderNav from "../components/Header/Header-Nav.astro"
 ---
 
 <html lang="en">
@@ -14,7 +14,8 @@
 	<meta name="keywords" content="Stempedia Wiki STEM Wikipedia " />
 </head>
 <body>
-	<slot/>
+    <HeaderNav />
+    <slot/>
 </body>
 
 </html>
@@ -36,5 +37,9 @@
 	background-color: HSL(57, 96%, 91%);
 	color: black;
 	font-size: clamp(15px, 0.4em, 24px);
+    }
+    body {
+	margin: 0px;
+	padding: 0px;
     }
 </style>
