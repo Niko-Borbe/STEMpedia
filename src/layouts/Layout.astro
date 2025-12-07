@@ -34,9 +34,16 @@ import HeaderNav from "../components/Header/Header-Nav.astro"
 	src: url("/geist-V.woff2") format("woff2");
     }
     :root {
-	background-color: HSL(57, 96%, 91%);
+	--color-corn: hsl(54, 95%, 67%);
+	--colos-peach: hsl(37°, 100%, 92%);
+	--color-blond: hsl(49, 83%, 86%);
+	--color-cream: hsl(57, 96%, 91%);
+	--color-beige: hsl(60, 56%, 91%);
+	--color-eucalyptus: hsl(72, 28%, 76%);
+	--color-pistachio: hsl(62, 46%, 86%);
+	--color-oliveDrab: hsl(80, 60%, 35%);
+	background-color: var(--color-cream);
 	color: black;
-	font-size: clamp(15px, 0.4em, 24px);
     }
     body {
 	margin: 0px;
