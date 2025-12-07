@@ -34,6 +34,41 @@ import HeaderNav from "../components/Header/Header-Nav.astro"
 	src: url("/geist-V.woff2") format("woff2");
     }
     :root {
+	/* VARIABLES START */
+
+	/* @link https://utopia.fyi/type/calculator?c=360,17,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+	/* FONT SIZING VARIABLES */
+	--font-2: clamp(0.68rem, 0.6704rem + 0.0427vw, 0.7035REm);
+	--font-1: clamp(0.85rem, 0.8141rem + 0.1595vw, 0.9377rem);
+	--font-p: clamp(1.0625rem, 0.9858rem + 0.3409vw, 1.25rem);
+	--font-1: clamp(1.3281rem, 1.1898rem + 0.6148vw, 1.6663rem);
+	--font-2: clamp(1.6602rem, 1.4307rem + 1.0199vw, 2.2211rem);
+	--font-3: clamp(2.0752rem, 1.7129rem + 1.6101vw, 2.9607rem);
+	--font-4: clamp(2.594rem, 2.0406rem + 2.4594vw, 3.9467rem);
+	--font-5: clamp(3.2425rem, 2.4168rem + 3.6698vw, 5.2609rem);
+
+	/* @link https://utopia.fyi/space/calculator?c=360,17,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+	/* VARIOUS SPACING VARIABLES*/
+	--space-3xs: clamp(0.25rem, 0.2244rem + 0.1136vw, 0.3125rem);
+	--space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+	--space-xs: clamp(0.8125rem, 0.7614rem + 0.2273vw, 0.9375rem);
+	--space-s: clamp(1.0625rem, 0.9858rem + 0.3409vw, 1.25rem);
+	--space-m: clamp(1.625rem, 1.5227rem + 0.4545vw, 1.875rem);
+	--space-l: clamp(2.125rem, 1.9716rem + 0.6818vw, 2.5rem);
+	--space-xl: clamp(3.1875rem, 2.9574rem + 1.0227vw, 3.75rem);
+	--space-2xl: clamp(4.25rem, 3.9432rem + 1.3636vw, 5rem);
+	--space-3xl: clamp(6.375rem, 5.9148rem + 2.0455vw, 7.5rem);
+	/* One-up pairs */
+	--space-3xs-2xs: clamp(0.25rem, 0.0966rem + 0.6818vw, 0.625rem);
+	--space-2xs-xs: clamp(0.5625rem, 0.4091rem + 0.6818vw, 0.9375rem);
+	--space-xs-s: clamp(0.8125rem, 0.6335rem + 0.7955vw, 1.25rem);
+	--space-s-m: clamp(1.0625rem, 0.7301rem + 1.4773vw, 1.875rem);
+	--space-m-l: clamp(1.625rem, 1.267rem + 1.5909vw, 2.5rem);
+	--space-l-xl: clamp(2.125rem, 1.4602rem + 2.9545vw, 3.75rem);
+	--space-xl-2xl: clamp(3.1875rem, 2.446rem + 3.2955vw, 5rem);
+	--space-2xl-3xl: clamp(4.25rem, 2.9205rem + 5.9091vw, 7.5rem);
+
+	/* PRESET COLORS !!!TO BE ADJUSTED*/
 	--color-corn: hsl(54, 95%, 67%);
 	--colos-peach: hsl(37°, 100%, 92%);
 	--color-blond: hsl(49, 83%, 86%);
@@ -42,6 +77,7 @@ import HeaderNav from "../components/Header/Header-Nav.astro"
 	--color-eucalyptus: hsl(72, 28%, 76%);
 	--color-pistachio: hsl(62, 46%, 86%);
 	--color-oliveDrab: hsl(80, 60%, 35%);
+	/* VARIABLES END */
 	background-color: var(--color-cream);
 	color: black;
     }
